@@ -1,0 +1,50 @@
+{
+  "name": "claude-browser-tools",
+  "version": "2.0.0",
+  "description": "Enhanced browser tools for AI assistants with auto-screenshot, real-time logs, and advanced WebSocket communication",
+  "main": "optimized-browser-server.js",
+  "preferGlobal": true,
+  "bin": {
+    "claude-browser-tools": "./bin/cli.js",
+    "browser-tools": "./bin/cli.js",
+    "cbt": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node optimized-browser-server.js",
+    "test": "node test-ai-screenshot.js",
+    "install-global": "npm install -g .",
+    "uninstall-global": "npm uninstall -g claude-browser-tools"
+  },
+  "keywords": [
+    "browser-tools",
+    "ai-assistant",
+    "screenshot",
+    "automation",
+    "mcp",
+    "chrome-extension",
+    "websocket",
+    "claude",
+    "development-tools"
+  ],
+  "author": "Claude AI Assistant",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "local-development"
+  },
+  "homepage": "http://localhost:3025",
+  "files": [
+    "bin/",
+    "optimized-browser-server.js",
+    "test-ai-screenshot.js",
+    "chrome-extension/",
+    "README.md"
+  ]
+}
